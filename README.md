@@ -3,7 +3,6 @@
 This is a Flask API that I will keep improving with new features and functionalities.
 This boilerplate can be used as a template for bigger projects.
 
- ## 🔴 I'll start to improve this project again after a couple of years
 
 ### Introduction
 
@@ -18,31 +17,46 @@ By convention, templates and static files are stored in subdirectories within th
 * [SQLAlchemy](https://docs.sqlalchemy.org/) - ORM
 * [Pydantic](https://pydantic-docs.helpmanual.io/) - Data validation
 * [Alembic](https://alembic.sqlalchemy.org/) - Database Migrations
-* [Pip](https://pypi.org/project/pip/) - Dependency Management
-* [RESTful](https://restfulapi.net/) - REST docs
-* [Representational State Transfer](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) - Article by Roy Fielding
+* [Pipenv](https://pypi.org/project/pipenv/) - Dependency Management
+
+### Development Dependencies
+* [Flake8](https://flake8.pycqa.org/en/latest/) - Code Linting
+* [Black](https://black.readthedocs.io/en/stable/) - Code Formatter
+* [Isort](https://pycqa.github.io/isort/) - Import Sorter
+* [Mypy](https://mypy.readthedocs.io/en/stable/) - Static Type Checker
+* [Pylama](https://pylama.readthedocs.io/en/latest/) - Code Linting
+* [Pre-commit](https://pre-commit.com/) - Git Hooks
+* [Yamllint](https://yamllint.readthedocs.io/en/stable/) - YAML Linter
 
 ### Virtual environments
 
 ```
-$ sudo apt-get install python-virtualenv
-$ python3 -m venv venv
-$ . venv/bin/activate
-$ pip install Flask
+$ pip install pipenv
+$ pipenv shell
 ```
 
 Install all project dependencies using:
 
 ```
-$ pip install -r requirements.txt
+$ pipenv install
+```
+
+Install all development dependencies using:
+
+```
+$ pipenv install --dev
+```
+
+Install pre-commit hooks:
+
+```
+$ pre-commit install
 ```
 
 ### Running
  
 ```
-$ export FLASK_APP=app.py
-$ export FLASK_ENV=development
-$ python -m flask run
+$ flask run
 ```
 
 This launches a very simple builtin server, which is good enough for testing but probably not what you want to use in production.
@@ -93,16 +107,14 @@ This API was developed based on:
 
 [Flask documentation](https://flask.palletsprojects.com/)
 
-[REST APIs with Flask and Python](https://www.udemy.com/rest-api-flask-and-python/) 
+[SQLAlchemy documentation](https://docs.sqlalchemy.org/)
 
-[The Ultimate Flask Course](https://www.udemy.com/the-ultimate-flask-course) 
+[Pydantic documentation](https://pydantic-docs.helpmanual.io/)
+
+[Alembic documentation](https://alembic.sqlalchemy.org/)
+
 
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Certificate
-
-
-[Certificate](https://www.udemy.com/certificate/UC-CYMYZILZ/)

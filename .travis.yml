@@ -1,3 +1,0 @@
-language: python
-  on:
-    branch: master
