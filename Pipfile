@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+alembic = "*"
+pylama = "*"
+sqlalchemy = "*"
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+pylama = "*"
+pytest = "*"
+pytest-cov = "*"
+yamllint = "*"
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+lint = "bash -c 'flake8 . && mypy . && pylama . && yamllint .'"
+format = "bash -c 'black . && isort .'"
+test = "pytest"
