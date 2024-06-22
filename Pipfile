@@ -18,6 +18,7 @@ pylama = "*"
 pytest = "*"
 pytest-cov = "*"
 yamllint = "*"
+setuptools = "*"
 
 [requires]
 python_version = "3.12"
