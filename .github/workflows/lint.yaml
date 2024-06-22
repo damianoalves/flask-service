@@ -24,9 +24,5 @@ jobs:
 
       - name: Run format and lint
         run: |
-          black .
-          isort .
-          flake8 .
-          mypy .
-          pylama .
-          yamllint .
+          pipenv run format
+          pipenv run lint
